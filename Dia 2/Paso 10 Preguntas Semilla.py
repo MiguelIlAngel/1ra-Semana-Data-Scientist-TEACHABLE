@@ -15,3 +15,8 @@ print(coste_total)
 
 
 # ¿Cuanto nos cuesta que los empleados no estén motivados? (pérdidas en implicación == Baja)
+coste_motivacion = df.loc[(df.abandono == 1) & (df.implicacion == 'Baja')].impacto_abandono.sum() # loc = filtrar, 1 = "yes" (los que abandonaron), impacto_abandono = columna con el impacto económico sumados
+print(coste_motivacion)
+# 368672.688 euros, es decir, $368.672,69 euros es la perdida total por abandono de empleados con baja implicación
+
+

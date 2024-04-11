@@ -7,7 +7,7 @@ df = pd.read_csv('C:/Users/Miguel/Desktop/Analista de Datos/Externo/1ra Semana D
 
 print(df.isna().sum().sort_values(ascending=False)) # df.isna() -> DataFrame con valores faltantes, df.isna().sum() -> Suma de valores faltantes por columna, df.isna().sum().sort_values(ascending=False) -> Ordenar de mayor a menor
 
-'''
+''' # LAS COMILLAS TRIPLES SIRVEN PARA COMENTAR VARIAS LÍNEAS
 anos_en_puesto              1238
 conciliacion                1011
 sexo                         199
@@ -40,3 +40,13 @@ departamento                   0
 viajes                         0
 anos_con_manager_actual        0
 '''
+
+# df.isna() me muestra los valores que tienen nulos, en este caso años en puesto, conciliación, sexo, educación, satisfacción en el trabajo, implicación
+# los demas no tienen valores nulos y eso es bueno para el análisis de datos
+
+#Conclusiones:
+# anos_en_puesto y conciliacion tienen demasiados nulos --> eliminar Variables, o sea que no las vamos a usar porque tienen demasiados nulos
+
+# sexo, educacion, satisfaccion_trabajo e implicacion --> imputarlos tras EDA
+# EDA --> Exploratory Data Analysis --> Análisis Exploratorio de Datos --> Estadística Descriptiva
+# Signifiica que vamos a hacer un análisis de los datos para ver si hay valores atípicos, valores nulos, valores que no tienen sentido, etc.

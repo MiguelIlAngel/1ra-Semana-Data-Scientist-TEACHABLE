@@ -27,10 +27,5 @@ df['satisfaccion_trabajo'] = df['satisfaccion_trabajo'].fillna('Alta') # df['sat
 df['implicacion'] = df['implicacion'].fillna('Media') # df['implicacion'] -> Serie, df['implicacion'].fillna('Media') -> Reemplazar valores nulos por "Media"
 
 
-# Para ver si se imputaron los valores nulos
-print(df.isna().sum().sort_values(ascending=False)) # df.isna() -> DataFrame con valores faltantes, df.isna().sum() -> Suma de valores faltantes por columna, df.isna().sum().sort_values(ascending=False) -> Ordenar de mayor a menor
-
-
-
 
 

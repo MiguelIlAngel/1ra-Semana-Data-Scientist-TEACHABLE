@@ -7,3 +7,5 @@ df = pd.read_csv('C:/Users/Miguel/Desktop/Analista de Datos/Externo/1ra Semana D
 #print(df) # Mostrar DataFrame COMPLETO
 
 print(df.head()) # Mostrar las primeras 5 filas del DataFrame
+
+

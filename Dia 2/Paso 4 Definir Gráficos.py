@@ -27,5 +27,10 @@ def graficos_eda_categoricos(cat):
         ax[cada].set_title(variable, fontsize = 12, fontweight = "bold")
         ax[cada].tick_params(labelsize = 12)
 
-graficos_eda_categoricos(df.select_dtypes(object)) # Llamamos a la función para graficar las variables categóricas
-plt.show() # Mostrar gráficos
+
+# Llamamos a la función para graficar las variables categóricas
+graficos_eda_categoricos(df.select_dtypes(object))
+
+# Mostrar gráficos en una sola ventana
+plt.show()
+

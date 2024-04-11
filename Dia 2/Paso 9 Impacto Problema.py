@@ -55,3 +55,20 @@ resultados = [df.salario_ano * 0.161, df.salario_ano * 0.197, df.salario_ano * 0
 df['impacto_abandono'] = np.select(condiciones,resultados, default = -999)
 
 print(df)
+
+# LO IMPORTANTE
+'''
+            salario_ano     impacto_abandono
+id                                              
+1             71916         14670.864  
+2             61560         12558.240  
+4             25080          4037.880  
+5             34908          6876.876  
+7             41616          8198.352  
+...           ...                 ...      
+2061          30852          6077.844  
+2062          119892        25177.320  
+2064          73704         15035.616  
+2065          64680         13194.720  
+2068          52848         10780.992
+'''
